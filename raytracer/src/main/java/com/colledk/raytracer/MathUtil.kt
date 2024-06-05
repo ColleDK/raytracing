@@ -7,7 +7,7 @@ fun randomFloat(): Float {
     return generator.nextFloat()
 }
 
-fun randomDouble(min: Double, max: Double): Double {
+fun randomFloat(min: Float, max: Float): Float {
     val generator = Random(System.currentTimeMillis())
-    return generator.nextDouble(min, max)
+    return generator.nextDouble(min.toDouble(), max.toDouble()).toFloat()
 }
